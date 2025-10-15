@@ -1,4 +1,18 @@
-//question 21
+//Q21: Write a program to display the month name and number of days using switch-case for a given month number.
+
+/*
+Sample Test Cases:
+Input 1:
+2
+Output 1:
+February, 28 days
+
+Input 2:
+12
+Output 2:
+December, 31 days
+
+*/
 #include <stdio.h>
 void main() {
     int month;
@@ -45,7 +59,26 @@ void main() {
     }
 }
 
-//question 22
+//Q22: Write a program to find profit or loss percentage given cost price and selling price.
+
+/*
+Sample Test Cases:
+Input 1:
+1000 1200
+Output 1:
+Profit 20%
+
+Input 2:
+1000 800
+Output 2:
+Loss 20%
+
+Input 3:
+1000 1000
+Output 3:
+No Profit No Loss
+
+*/
 #include <stdio.h>
 void main() {
     float cp, sp, percent;
