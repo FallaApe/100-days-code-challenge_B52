@@ -10,7 +10,7 @@ void main() {
         printf("%c is upper case\n", a);
     } else {
         printf("%c is not an alphabet\n", a);
-    }
+    }  
 } 
 
 //qiestion 16
