@@ -1,4 +1,23 @@
-//question 19
+//Q19: Write a program to classify a triangle as Equilateral, Isosceles, or Scalene based on its side lengths.
+
+/*
+Sample Test Cases:
+Input 1:
+3 3 3
+Output 1:
+Equilateral
+
+Input 2:
+3 3 4
+Output 2:
+Isosceles
+
+Input 3:
+2 3 4
+Output 3:
+Scalene
+
+*/
 #include <stdio.h>
 
 void main() {
@@ -26,7 +45,21 @@ void main() {
     }
 }
 
-//question 20
+//Q20: Write a program to display the day of the week based on a number (1–7) using switch-case.
+
+/*
+Sample Test Cases:
+Input 1:
+1
+Output 1:
+Monday
+
+Input 2:
+5
+Output 2:
+Friday
+
+*/
 #include <stdio.h>
 void main() {
     int n;
