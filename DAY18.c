@@ -14,21 +14,16 @@ Output 2:
 
 */
 #include <stdio.h>
-void main() {
-    int n, fact[100], count = 0; 
-    printf("Enter number: ");
-    scanf("%d", &n);
-    for (int i = 1; i <= n; i++) {
-        if (n % i == 0) {
-            fact[count] = i;
-            count++;
+void main () {
+    int n;
+    printf("enter number: ");
+    scanf("%d",&n);
+    printf("factorails are\n");
+    for (int i=1;i<=n;i++) {
+        if (n%i==0) {
+            printf("%d\t",i);
         }
     }
-    printf("Factors of %d are: ", n);
-    for (int i = 0; i < count; i++) {
-        printf("%d\t", fact[i]);
-    }
-    printf("\n");
 }
 //Q36: Write a program to find the HCF (GCD) of two numbers.
 
