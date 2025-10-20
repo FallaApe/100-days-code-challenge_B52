@@ -41,35 +41,17 @@ Output 2:
 
 */
 #include <stdio.h>
-
-void main() {
-    int n1, n2;
-    int fact1[100], fact2[100];
-    int count1 = 0, count2 = 0;
+void main () {
+    int n,m;
+    printf("enter 2 numbers: ");
+    scanf("%d%d",&n,&m);
+    int hcf=1;
     
-    printf("Enter number 1: ");
-    scanf("%d", &n1);
-    for (int i = 1; i <= n1; i++) {
-        if (n1 % i == 0) {
-            fact1[count1++] = i; 
+    for (int i=1; i<=n && i<=m; i++ ) {
+        if (n%i==0 && m%i==0) {
+            hcf = i;
         }
     }
-    printf("Enter number 2: ");
-    scanf("%d", &n2);
-    for (int i = 1; i <= n2; i++) {
-        if (n2 % i == 0) {
-            fact2[count2++] = i; 
-        }
-    }
-
-    int hcf = 1;
-    for (int i = 0; i < count1; i++) {
-        for (int j = 0; j < count2; j++) {
-            if (fact1[i] == fact2[j] && fact1[i] > hcf) {
-                hcf = fact1[i];
-            }
-        }
-    }
-
-    printf("HCF of %d and %d is %d\n", n1, n2, hcf);
+    printf("hcf is %d",hcf);
+    
 }
