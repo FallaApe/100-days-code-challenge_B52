@@ -37,3 +37,22 @@ void main() {
         printf("not strong number");
 }
 //
+#include <stdio.h>
+void main() {
+    int a;
+    printf("enter number: ");
+    scanf("%d",&a);
+    float sum = 0;
+
+    for (int i = 1; i <= a; i++) {
+        float n = (i * 2) - 1;
+        float d = (i * 2);
+
+        if (i == 1)
+            sum += 1;          
+        else
+            sum += n / d;      
+    }
+
+    printf("Approximate sum: %.1f", sum);
+}
