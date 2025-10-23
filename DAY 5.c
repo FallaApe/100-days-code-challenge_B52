@@ -43,14 +43,17 @@ Output 2:
 
 */
 #include <stdio.h>
+
 void main() {
-    int time;
-    printf("enter time in sec: ");
-    scanf("%d",&time);
-    int hour,min,sec;
-    min = time/60;
-    hour = min/60;
-    sec = time%60;
-    printf("%d:%d:%d",hour,min,sec);
+    int n;
+    printf("Enter time in sec: ");
+    scanf("%d", &n);
+
+    int hours, mins, sec;
+
+    hours = n / 3600;       // 1 hour = 3600 seconds
+    mins = (n % 3600) / 60; // remaining seconds converted to minutes
+    sec = n % 60;           // remaining seconds
+
+    printf("Time - %d hours %d minutes %d seconds\n", hours, mins, sec);
 }
- 
