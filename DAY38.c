@@ -98,15 +98,7 @@ void main() {
             scanf("%d", &matrix[i][j]);
         }
     }
-    
-    int trans[c][r];
-    for (int i = 0; i < r; i++) {
-        for (int j = 0; j < c; j++) {
-            trans[j][i] = matrix[i][j];
-        }
-    }
-
-    // checking symmetry
+   
     int symmetric = 1;
 
     for (int i = 0; i < r; i++) {
